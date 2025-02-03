@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Oswald';
+}
+
+html{
+scroll-behavior : smooth;
+
+}
+
+section{
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+#inicio{
+    background-color: #f6830f;
+}
+#a1975{
+    background-color: #c2d610;
+}
+#a2015{
+    background-color: #a0e918;
+}
+#a2020{
+    background-color: #d1e42c;
+}
+#a2021{
+    background-color: #ff5100;
+}
+#a2023{
+    background-color: #f11919;
+}
+#inicio h1{
+    font-size: 30px;
+    letter-spacing:5px;
+}
+section h2{
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+section img{
+    margin-top: 30px;
+    max-width: 300px;
+
+}
+.contenedor-tiempo{
+position: fixed;
+top: 20px;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+justify-content: center;
+}
+.contenedor-tiempo .linea{
+width: 900px;
+position: absolute;
+top: 30px;
+height: 2px;
+background-color: black;
+z-index: -2;
+
+
+}
+.fecha{
+    display: inline-block;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #2d4059;
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+    transition: background-color, transform .5s linear;
+}
+
+.seleccionado{
+transform: scale(1.2);
+background-color: #ea5455;
+color: #000;
+font-weight: bold;
+
+
+
+}
